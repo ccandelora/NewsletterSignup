@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mailchimp = require('@mailchimp/mailchimp_marketing');
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 
 app.use(bodyParser.urlencoded({ extended: false }));
